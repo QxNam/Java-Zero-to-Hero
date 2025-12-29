@@ -9,3 +9,4 @@ public class Main {
         IO.println("Hello world!");
     }
 }
+ 

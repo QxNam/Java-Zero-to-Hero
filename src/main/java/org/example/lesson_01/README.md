@@ -27,6 +27,19 @@ Có $2$ loại chính: kiểu dữ liệu cơ bản/nguyên thuỷ (primitive) a
 - Về kiểu `objects/reference` là các đối tượng chứa tham chiếu đến các giá trị hoặc đối tượng khác. Ví dụ `String`
 - `null` là giá trị đặc biệt để biểu thị sự vắng mặt của giá trị.
 
+**Các kiểu dữ liệu cơ bản (Primitive Data Types)**
+
+|Type|Size (bits)| Minimum      | Maximum                | Example       |
+|---|---|--------------|------------------------|---------------|
+|byte|8| $-2^7$       | $2^7 – 1$              | byte b = 100; |
+|short|16| $-2^{15}$    | $2^{15}– 1$            | short s = 30_000;|
+|int|32| $-2^{31}$    | $2^{31}– 1$            | int i = 100_000_000;|
+|long|64| $-2^{63}$    | $2^{63}-1$             | long l = 100_000_000_000_000;|
+|float|32| $-2^{-149}$  | $(2-2^{-23})·2^{127}$  | float f = 1.456f;|
+|double|64| $-2^{-1074}$ | $(2-2^{-52})·2^{1023}$ | double f = 1.456789012345678;|
+|char|16| $0$          | $2^{16}– 1$            | char c = ‘c’;|
+|boolean|1| –            | –                      | boolean b = true;|
+
 ## III. Khai báo biến (Declaring Variables)
 code: `Data_types.java`
 ### 1. Đặt tên biến
@@ -110,6 +123,14 @@ code: `Operators.java`
 - Để một lớp có thể thực thi được, nó phải có  phương thức `main`.  Phương thức main biểu thị điểm vào của chương trình.
 - Đoạn mã nằm giữa dấu ngoặc nhọn mở và đóng `{}` được gọi là khối mã.
 - Mã nguồn của một chương trình Java được lưu trữ trong một tệp có phần mở rộng là  `*.java`
+
+Ý nghĩa của từng từ khóa trong chữ ký phương thức thông thường:
+- `public` – từ khóa truy cập, có nghĩa là phạm vi toàn cục
+- `static` – phương thức có thể được truy cập trực tiếp từ lớp, chúng ta không cần phải tạo một đối tượng để có tham chiếu và sử dụng nó
+- `void` – có nghĩa là phương thức này không trả về giá trị
+- `main` – tên của phương thức, đó là định danh mà JVM tìm kiếm khi thực thi một chương trình Java
+
+Còn tham số `args` đại diện cho các giá trị mà phương thức nhận được. Đây là cách chúng ta truyền các tham số cho chương trình khi khởi chạy lần đầu.
 
 ## VII. Biên dịch và thực thi chương trình
 

@@ -13,7 +13,8 @@ Nguồn tự học: https://www.baeldung.com/java-tutorial
     │   │       └── example
     │   │           ├── Main.java
     │   │           ├── lesson_01
-    │   │           └── lesson_02
+    │   │           ├── lesson_02
+    │   │           └── ...
     │   └── resources
     └── test
         └── java
